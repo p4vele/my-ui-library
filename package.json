@@ -2,12 +2,24 @@
   "name": "my-ui-library",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "p4vele",
   "license": "ISC",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files"
+  },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1"
   }
 }
